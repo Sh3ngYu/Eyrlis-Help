@@ -215,64 +215,108 @@
 						<i class="icon-menu h4"></i>
 					</button>
 					<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-						<ul class="navbar-nav">
+				<ul class="navbar-nav">
+						
+		<!-- Main - SG Update  -->
 							<li class="nav-item">
 								<a href="<?php echo $this->url('main');?>" class="nav-link">Home</a>
 							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagesDropdown" role="button" data-toggle="dropdown">Eyrlis-RO</a>
-								<div class="dropdown-menu" aria-labelledby="pagesDropdown">
-									<a class="dropdown-item" href="<?php echo $this->url('main','features');?>" >
-										<span class="h6 mb-0" style="text-align:left;">Features</span>
-										<p class="text-small text-muted">Rates, Drops, Features...</p>
-									</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="<?php echo $this->url('main','staff');?>" >
-										<span class="h6 mb-0" style="text-align:left;">Staff</span>
-										<p class="text-small text-muted">Members, Missions...</p>
-									</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="<?php echo $this->url('main','Download');?>" >
-										<span class="h6 mb-0" style="text-align:left;">Download the server</span>
-										<p class="text-small text-muted">Full client, Light Client.. BGM..</p>
-									</a>
-<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="<?php echo $this->url('main','changelog');?>" >
-										<span class="h6 mb-0" style="text-align:left;">Changelog / Updates</span>
-										<p class="text-small text-muted">Modifications, Updates..</p>
-									</a>
-
-<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="<?php echo $this->url('main','changes');?>" >
-										<span class="h6 mb-0" style="text-align:left;">Custom changes & NPCs</span>
-										<p class="text-small text-muted">NPCs Informations, Custom changes..</p>
-									</a>
-
-								</div>
-							</li>
-
-
 							
-
+		<!-- START 1 Eyrlis-RO - SG Update -->		
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagesDropdown" role="button" data-toggle="dropdown">Informations</a>
+		<!-- Update -->	<div class="dropdown-menu" aria-labelledby="pagesDropdown">
+							<a class="dropdown-item" href="<?php echo $this->url('main','changelog');?>" >
+								<span class="h6 mb-0" style="text-align:left;">Changelog / Updates</span>
+								<p class="text-small text-muted">Modifications, Updates..</p>
+							</a>
+		<!-- Staff -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','staff');?>" >
+								<span class="h6 mb-0" style="text-align:left;">Staff</span>
+								<p class="text-small text-muted">Members, Missions...</p>
+							</a>
+		<!-- Ranking -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('ranking','guild');?>" >
+								<span class="h6 mb-0" style="text-align:left;">Ranking</span>
+								<p class="text-small text-muted">Guild, Zeny...</p>
+							</a>
+		<!-- Feature-->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','features');?>" >
+								<span class="h6 mb-0" style="text-align:left;">Features</span>
+								<p class="text-small text-muted">Rates, Drops, Features...</p>
+							</a>
+		<!-- Custom -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','changes');?>" >
+								<span class="h6 mb-0" style="text-align:left;">Custom changes & NPCs</span>
+								<p class="text-small text-muted">NPCs Informations, Custom changes..</p>
+							</a>
+						</div>
+							</li>
+		<!-- END 1 Eyrlis-RO - SG Update -->
+		<!-- START 1 Download - SG Update  -->
+							<li class="nav-item">
+								<a href="<?php echo $this->url('main','Download');?>" class="nav-link">Download</a>
+							</li>
+		<!-- END 1 Download - SG Update  -->	
+		<!-- START 1 Eyrlis World - SG Update  -->	
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagesDropdown" role="button" data-toggle="dropdown">Eyrlis World</a>
+						<div class="dropdown-menu" aria-labelledby="pagesDropdown">
+		<!-- House -->		<a class="dropdown-item" href="<?php echo $this->url('main','ghouse');?>" >
+								<span class="h6 mb-0">Guild's House</span>
+								<p class="text-small text-muted"></p>
+							</a>
+		<!-- Job -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','gmerchant');?>" >
+								<span class="h6 mb-0">Custom Job</span>
+								<p class="text-small text-muted"></p>
+							</a>
+		<!-- MVP -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','mvphat');?>" >
+								<span class="h6 mb-0">MVP's Souls</span>
+								<p class="text-small text-muted"></p>
+							</a>
+		<!-- Inst -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','ninerealm');?>" >
+								<span class="h6 mb-0">Instancied Dongeon</span>
+								<p class="text-small text-muted"></p>
+							</a>
+		<!-- WorldB -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','wboss');?>" >
+								<span class="h6 mb-0">World MVP</span>
+								<p class="text-small text-muted"></p>
+							</a>
+		<!-- Oarea -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="<?php echo $this->url('main','helheim');?>" >
+								<span class="h6 mb-0">Open Area</span>
+								<p class="text-small text-muted"></p>
+							</a>
+						</div>
+							</li>
+		<!-- END 1 Community - SG Update  -->	
+		<!-- START 1 Community - SG Update  -->	
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagesDropdown" role="button" data-toggle="dropdown">Community</a>
-								<div class="dropdown-menu" aria-labelledby="pagesDropdown">
+						<div class="dropdown-menu" aria-labelledby="pagesDropdown">
 
-									<a class="dropdown-item" href="<?php echo $this->url('main','Stream');?>" >
-										<span class="h6 mb-0">Stream</span>
-										<p class="text-small text-muted"></p>
-									</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="https://discord.gg/JPDgT4t" >
-										<span class="h6 mb-0">Discord</span>
-										<p class="text-small text-muted"></p>
-									</a>
-								</div>
+		<!-- Stream -->		<a class="dropdown-item" href="<?php echo $this->url('main','Stream');?>" >
+								<span class="h6 mb-0">Stream</span>
+								<p class="text-small text-muted"></p>
+							</a>
+		<!-- Stream -->	<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="https://discord.gg/JPDgT4t" >
+								<span class="h6 mb-0">Discord</span>
+								<p class="text-small text-muted"></p>
+							</a>
+						</div>
 							</li>
+		<!-- END 1 Community - SG Update  -->				
+		<!-- START 1 Store - SG Update  -->						
 							<li class="nav-item">
 								<a href="<?php echo $this->url('shop');?>" class="nav-link">Store</a>
 							</li>
-
+		<!-- END 1 Store - SG Update  -->						
+		<!-- START 1 Ranking - SG Update  -->	
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="javascript:void(0)" id="pagesDropdown" role="button" data-toggle="dropdown">Ranking</a>
 								<div class="dropdown-menu" aria-labelledby="pagesDropdown">
@@ -317,12 +361,13 @@
 
 								</div>
 							</li>
-
-	</li>
+		<!-- END 1 Ranking - SG Update  -->
+		<!-- START 1 Vote - SG Update  -->
 							<li class="nav-item">
 								<a href="<?php echo $this->url('voteforpoints');?>" class="nav-link">Vote</a>
 							</li>
-						</ul>
+		<!-- END 1 Vote - SG Update  -->
+				</ul>
 
 						<?php if (!$session->isLoggedIn()): ?>  
 							<ul class="navbar-nav">
